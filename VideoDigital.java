@@ -4,14 +4,14 @@ public class VideoDigital extends ItemBibliotecaDigital implements Baixavel, Vis
     }
 
     public String getDescricao() {
-        return "\nVideo Digital:\nTitulo: " + getTitulo() + "| Nome do Autor: " + getAutorItem();
+        return "Video Digital\nTitulo: " + getTitulo() + "| Nome do Autor: " + getAutorItem();
     }
 
     public void baixar() {
-
+        System.out.println("Baixando video '" + getTitulo() + "' do autor '" + getAutorItem() + "'");
     }
 
     public void visualizar() {
-
+        System.out.println("Visualizando video '" + getTitulo() + "' do autor '" + getAutorItem() + "'");
     }
 }

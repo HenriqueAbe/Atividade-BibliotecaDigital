@@ -4,10 +4,10 @@ public class Ebook extends ItemBibliotecaDigital implements Baixavel{
     }
 
     public String getDescricao() {
-        return "\nEbook \nTítulo: " + getTitulo() + "| Nome: " + getAutorItem();
+        return "Ebook \nTítulo: " + getTitulo() + "| Nome: " + getAutorItem();
     }
 
     public void baixar() {
-
+        System.out.println("Baixando livro '" + getTitulo() + "' do autor '" + getAutorItem() + "'.");
     }
 }
